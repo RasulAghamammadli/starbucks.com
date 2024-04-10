@@ -1,0 +1,199 @@
+// Main Menu Start
+.main-nav {
+  @media (max-width: 1500px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 24px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+  .container {
+    .nav-center {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .menu-side {
+        display: flex;
+        align-items: center;
+        .logo {
+          display: block;
+          width: 56px;
+          height: 56px;
+          margin-right: 40px;
+          @media (max-width: 1024px) {
+            margin-right: 24px;
+          }
+          @media (max-width: 788px) {
+            margin-top: 14px;
+            margin-bottom: 14px;
+          }
+          @media (max-width: 768px) {
+            width: 44px;
+            height: 44px;
+          }
+          @media (max-width: 375px) {
+            width: 35px;
+            height: 35px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .nav-list {
+          display: flex;
+          align-items: center;
+          li {
+            margin-left: 24px;
+            &:first-child {
+              margin-left: 0;
+            }
+            a {
+              display: inline-block;
+              text-transform: uppercase;
+              font-weight: 800;
+              font-size: 14px;
+              letter-spacing: 1.7px;
+              line-height: 1.5;
+              padding: 39px 0;
+              color: $fontColor;
+              transition: all 0.1s ease-in-out;
+              &:hover {
+                color: $hoverFontColor;
+              }
+              @media (max-width: 1024px) {
+                padding: 31px 0;
+              }
+            }
+            .active {
+              box-shadow: inset 0 -6px $hoverFontColor;
+            }
+          }
+          @media (max-width: 788px) {
+            display: none;
+          }
+        }
+      }
+      .navigation-side {
+        display: flex;
+        align-items: center;
+        @media (max-width: 788px) {
+          display: none;
+        }
+        .find-store {
+          margin-right: 40px;
+          padding-right: 16px;
+          display: flex;
+          color: $fontColor;
+          transition: all 0.1s ease-in-out;
+          &:hover {
+            color: $hoverFontColor;
+          }
+          .loc-icon {
+            font-size: 26px;
+            margin-right: 6px;
+          }
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0.4px;
+          }
+        }
+        .for-user {
+          display: flex;
+          align-items: center;
+          .user-btn {
+            font-size: 14px;
+            border-radius: 50px;
+            border: 1px solid #000 !important;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.3px;
+            padding: 7px 16px;
+            transition: all 0.2s ease-in-out;
+          }
+          .login {
+            margin-right: 16px;
+            color: $colorTextBlack;
+            &:hover {
+              background-color: #0000001a;
+            }
+          }
+          .register {
+            background-color: #000;
+            color: #fff;
+            &:hover {
+              background-color: #000000b3;
+              border-color: #000000b3;
+            }
+          }
+        }
+      }
+      .hamburger {
+        cursor: pointer;
+        position: relative;
+        margin-right: 12px;
+        display: none;
+        @media (max-width: 788px) {
+          display: block;
+        }
+        &:hover {
+          .hover-bg {
+            transform: scale(1);
+          }
+        }
+        .hover-bg {
+          position: absolute;
+          top: -11px;
+          left: -8px;
+          width: 36px;
+          height: 36px;
+          border-radius: 100%;
+          background-color: rgba(0, 0, 0, 0.06);
+          transform: scale(0);
+          transition: all 0.3s ease-in-out;
+        }
+        .bars {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 20px;
+          height: 14px;
+          transition: all 0.1s ease-in-out;
+          .bar {
+            width: 100%;
+            height: 1.7px;
+            background-color: rgba(0, 0, 0, 0.58);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+      // Cancel btn
+      .open {
+        .hover-bg {
+          top: -10px;
+        }
+        .bars {
+          height: 17.7px;
+          .bar {
+            &:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+            }
+          }
+        }
+      }
+      // Cancel btn
+    }
+  }
+}
+// Main Menu End

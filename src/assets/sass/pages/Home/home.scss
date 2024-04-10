@@ -1,0 +1,229 @@
+// Home Start
+.home {
+  .container {
+    .home-inner {
+      display: flex;
+      flex-direction: column;
+      .home-card-section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 32px;
+        @media (max-width: 768px) {
+          flex-direction: column-reverse;
+        }
+        &:nth-child(1) {
+          flex-direction: row-reverse;
+          background-color: #d3e8e1;
+          @media (max-width: 768px) {
+            flex-direction: column-reverse;
+          }
+        }
+        &:nth-child(2) {
+          background-color: #fdd8f7;
+        }
+        &:nth-child(3) {
+          flex-direction: row-reverse;
+          background-color: #97d8b1;
+          @media (max-width: 768px) {
+            flex-direction: column-reverse;
+          }
+          .content-side {
+            .content-in {
+              .title {
+                font-size: 24px;
+                letter-spacing: 0.5px;
+                @media (max-width: 768px) {
+                  font-size: 22px;
+                }
+                @media (max-width: 375px) {
+                  font-size: 19px;
+                }
+              }
+              .text {
+                font-size: 19px;
+                line-height: 1.75;
+                letter-spacing: 0.5px;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                  letter-spacing: 0.4px;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          background-color: #cee8c9;
+        }
+        &:nth-child(5) {
+          flex-direction: row-reverse;
+          background-color: #006241;
+          @media (max-width: 768px) {
+            flex-direction: column-reverse;
+          }
+          .content-side {
+            .content-in {
+              .title {
+                color: #fff;
+              }
+              .text {
+                color: #fff;
+              }
+              .btn {
+                color: #fff;
+                border: 1px solid #fff !important;
+                &:hover {
+                  background-color: rgba(0, 0, 0, 0.2);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(6) {
+          background-color: #d4e9e2;
+          .content-side {
+            .content-in {
+              .title {
+                font-size: 24px;
+                letter-spacing: 0.5px;
+                @media (max-width: 768px) {
+                  font-size: 22px;
+                  letter-spacing: 0.6px;
+                  line-height: 1.5;
+                }
+                @media (max-width: 375px) {
+                  font-size: 19px;
+                }
+              }
+              .text {
+                font-size: 19px;
+                line-height: 1.75;
+                letter-spacing: 0.7px;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                  letter-spacing: 0.4px;
+                }
+              }
+            }
+          }
+        }
+        .content-side {
+          width: 50%;
+          padding: 32px 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          @media (max-width: 768px) {
+            width: 100%;
+            padding: 32px 16px;
+          }
+          .content-in {
+            max-width: 83%;
+            @media (max-width: 768px) {
+              max-width: 100%;
+            }
+            .title {
+              color: $darkGreen;
+              font-size: 50px;
+              font-weight: 600;
+              letter-spacing: 4px;
+              line-height: 1.2;
+              margin-bottom: 24px !important;
+              @media (max-width: 1024px) {
+                font-size: 28px;
+                letter-spacing: 2px;
+              }
+              @media (max-width: 375px) {
+                font-size: 24px;
+              }
+            }
+            .text {
+              color: $darkGreen;
+              font-size: 24px;
+              font-weight: 400;
+              line-height: 1.5;
+              letter-spacing: 1px;
+              @media (max-width: 1024px) {
+                letter-spacing: 0.5px;
+              }
+              @media (max-width: 768px) {
+                font-size: 22px;
+              }
+              @media (max-width: 375px) {
+                font-size: 19px;
+              }
+            }
+            .btn {
+              min-width: 35px;
+              min-height: 35px;
+              display: inline-block;
+              background: transparent;
+              color: $darkGreen;
+              border: 1px solid $darkGreen !important;
+              border-radius: 50px;
+              padding: 7px 16px;
+              font-size: 16px;
+              font-weight: 600;
+              letter-spacing: 0.5px;
+              line-height: 1.2;
+              text-align: center;
+              transition: all 0.2s ease-in-out;
+              margin-top: 32px;
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+              }
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .img-side {
+          width: 50%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
+      .inner-bottom {
+        margin-top: 32px;
+        padding: 32px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .content {
+          max-width: 51%;
+          padding: 0 40px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.8;
+          letter-spacing: 0.3px;
+          color: #000;
+          @media (max-width: 1024px) {
+            max-width: 60%;
+          }
+          @media (max-width: 878px) {
+            max-width: 70%;
+          }
+          @media (max-width: 768px) {
+            max-width: 80%;
+            font-size: 13px;
+            padding: 0 16px;
+          }
+          @media (max-width: 648px) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// Home End

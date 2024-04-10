@@ -1,0 +1,72 @@
+// Mobile Footer Nav Start
+.mobile-footer-nav {
+  padding-bottom: 32px;
+  display: none;
+  @media (max-width: 1024px) {
+    display: block;
+  }
+  .accordion {
+    .accordion-item {
+      padding-bottom: 4px;
+      @media (max-width: 768px) {
+        padding-bottom: 8px;
+      }
+      @media (max-width: 480px) {
+        padding-bottom: 1px;
+      }
+      &:nth-child(5) {
+        padding-bottom: 2px;
+        .accordion-header {
+          .accordion-button {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .accordion-header {
+        .accordion-button {
+          font-size: 19px;
+          font-weight: 400;
+          color: $fontColor;
+          line-height: 1.5;
+          letter-spacing: 0.5px;
+          padding: 8px 0;
+          margin-bottom: 16px;
+          background-color: transparent;
+          &:focus {
+            box-shadow: none;
+          }
+          &::after {
+            margin-right: 6px;
+          }
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+      .accordion-collapse {
+        .accordion-body {
+          padding: 0;
+          ul {
+            display: inline-block;
+            li {
+              a {
+                display: block;
+                color: $lightFontColor;
+                padding: 8px 0;
+                margin-bottom: 8px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.4px;
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Mobile Footer Nav End

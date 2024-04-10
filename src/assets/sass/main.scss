@@ -1,0 +1,34 @@
+// Base Settings
+@import "./base";
+
+// Variables
+@import "./utils/variable";
+
+/* -------------------------------------------------------------------- */
+// Pages //
+
+// Home
+@import "./pages/Home/home";
+
+/* -------------------------------------------------------------------- */
+
+/////
+//////
+/////
+
+/* -------------------------------------------------------------------- */
+// Components //
+
+// Header & components
+@import "./components/Header/header";
+@import "./components/Header/main-menu";
+@import "./components/Header/mobile-menu";
+
+// Footer & components
+@import "./components/Footer/footer";
+@import "./components/Footer/accordion-nav";
+
+// Not Found
+@import "./components/NotFound/not-found";
+
+/* -------------------------------------------------------------------- */
