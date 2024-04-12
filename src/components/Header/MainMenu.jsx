@@ -35,10 +35,10 @@ const MainMenu = ({ isOpen, setIsOpen }) => {
             </ul>
           </div>
           <div className="navigation-side">
-            <Link to="" className="find-store">
+            <NavLink to="/findastore" className="find-store">
               <MdLocationOn className="loc-icon" />
               <p>Find a store</p>
-            </Link>
+            </NavLink>
             <div className="for-user">
               <Link to="login" className="user-btn login">
                 Sign in

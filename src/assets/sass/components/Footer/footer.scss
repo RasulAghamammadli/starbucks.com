@@ -131,7 +131,7 @@ footer {
             letter-spacing: 0.4px;
             color: $fontColor;
             &:hover {
-              text-decoration: underline;
+              text-decoration: underline !important;
             }
             @media (max-width: 768px) {
               font-size: 14px;

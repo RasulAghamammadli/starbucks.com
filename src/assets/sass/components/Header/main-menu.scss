@@ -86,11 +86,17 @@
         .find-store {
           margin-right: 40px;
           padding-right: 16px;
+          padding-top: 36.5px;
+          padding-bottom: 36.5px;
           display: flex;
           color: $fontColor;
           transition: all 0.1s ease-in-out;
           &:hover {
             color: $hoverFontColor;
+          }
+          @media (max-width: 1024px) {
+            padding-top: 28.5px;
+            padding-bottom: 28.5px;
           }
           .loc-icon {
             font-size: 26px;
@@ -102,6 +108,9 @@
             line-height: 1.5;
             letter-spacing: 0.4px;
           }
+        }
+        .active {
+          box-shadow: inset 0 -6px $hoverFontColor;
         }
         .for-user {
           display: flex;

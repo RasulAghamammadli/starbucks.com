@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home/Home";
+import OurCompany from "./pages/OurCompany/OurCompany";
 
 // Components
 import Header from "./components/Header/Header";
@@ -16,6 +17,9 @@ const App = () => {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          {/* //  */}
+
+          <Route exact path="/about-us" element={<OurCompany />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -11,10 +11,10 @@ const AccordionNav = () => {
           <Accordion.Body>
             <ul>
               <li>
-                <Link>Our Company</Link>
+                <Link to="/about-us">Our Company</Link>
               </li>
               <li>
-                <Link>Our Coffee</Link>
+                <Link to="/our-coffee">Our Coffee</Link>
               </li>
               <li>
                 <Link>Stories and News</Link>
@@ -26,7 +26,7 @@ const AccordionNav = () => {
                 <Link>Investor Relations</Link>
               </li>
               <li>
-                <Link>Customer Service</Link>
+                <Link to="/customer-service">Customer Service</Link>
               </li>
               <li>
                 <Link>Contact Us</Link>
@@ -64,10 +64,10 @@ const AccordionNav = () => {
           <Accordion.Body>
             <ul>
               <li>
-                <Link>People</Link>
+                <Link to="/people">People</Link>
               </li>
               <li>
-                <Link>Planet</Link>
+                <Link to="/planet">Planet</Link>
               </li>
               <li>
                 <Link>Environmental and Social Impact Reporting</Link>
