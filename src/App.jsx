@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 // Pages
 import Home from "./pages/Home/Home";
 import OurCompany from "./pages/OurCompany/OurCompany";
+import OurCoffee from "./pages/OurCoffee/OurCoffee";
 
 // Components
 import Header from "./components/Header/Header";
@@ -20,6 +21,7 @@ const App = () => {
           {/* //  */}
 
           <Route exact path="/about-us" element={<OurCompany />} />
+          <Route exact path="/our-coffee" element={<OurCoffee />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </main>

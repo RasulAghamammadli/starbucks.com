@@ -1,0 +1,173 @@
+// Our Coffee Start
+.coffee-section {
+  padding: 48px 0 32px;
+  &:nth-child(1) {
+    padding-bottom: 0;
+  }
+  &:nth-child(2) {
+    .container {
+      .coffee-inner {
+        .content {
+          .img {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(3) {
+    .container {
+      .coffee-inner {
+        .content {
+          .img {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 740px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container {
+    .coffee-inner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .content {
+        max-width: 720px;
+        .title {
+          color: #000;
+          font-size: 50px;
+          letter-spacing: 4px;
+          line-height: 1.2;
+          font-weight: 900;
+          margin-bottom: 24px !important;
+          @media (max-width: 1024px) {
+            font-size: 28px;
+            letter-spacing: 2.4px;
+          }
+          @media (max-width: 375px) {
+            font-size: 24px;
+            letter-spacing: 2px;
+          }
+        }
+        .text {
+          width: 100%;
+          color: #000;
+          font-size: 19px;
+          line-height: 1.75;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        .mini {
+          width: 84%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        .img {
+          margin-top: 48px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .subtitle {
+          width: 82%;
+          color: #000;
+          font-size: 36px;
+          line-height: 1.4;
+          font-weight: 900;
+          letter-spacing: 1.8px;
+          margin: 32px 0 24px !important;
+          @media (max-width: 768px) {
+            width: 100%;
+            font-size: 24px;
+            letter-spacing: 1px;
+          }
+          @media (max-width: 375px) {
+            font-size: 22px;
+          }
+        }
+        .btn {
+          min-width: 35px;
+          min-height: 35px;
+          color: rgb(18, 131, 63);
+          display: inline-block;
+          border: 1px solid rgb(18, 131, 63) !important;
+          border-radius: 50px;
+          padding: 7px 16px;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.2;
+          letter-spacing: 0.5px;
+          text-align: center;
+          transition: all 0.2s ease;
+          margin-top: 32px;
+          &:hover {
+            background-color: rgb(18, 131, 63, 0.1);
+          }
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+        .colored {
+          background-color: rgb(17, 113, 78);
+          color: #fff;
+          &:hover {
+            background-color: rgb(17, 113, 78);
+            opacity: 0.9;
+          }
+        }
+        .extra {
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}
+
+.more-coffee {
+  padding: 48px 0;
+  @media (max-width: 740px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container {
+    .more-inner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .content {
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        .mini-text {
+          width: 90%;
+          color: #000;
+          font-size: 14px;
+          line-height: 1.8;
+          font-weight: 400;
+          letter-spacing: 0.2px;
+          margin-top: 1.5em !important;
+          &:nth-child(1) {
+            margin-top: 0 !important;
+          }
+          @media (max-width: 768px) {
+            font-size: 13px;
+            width: 82%;
+          }
+          @media (max-width:648px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// Our Coffee End
