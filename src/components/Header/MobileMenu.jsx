@@ -12,33 +12,33 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
       <nav className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <ul className="nav-list">
           <li onClick={() => setIsOpen(false)}>
-            <NavLink to="./menu">Menu</NavLink>
+            <NavLink to="/menu">Menu</NavLink>
           </li>
           <li onClick={() => setIsOpen(false)}>
-            <NavLink to="./rewards">Rewards</NavLink>
+            <NavLink to="/rewards">Rewards</NavLink>
           </li>
           <li onClick={() => setIsOpen(false)}>
-            <NavLink to="./gift">Gift Cards</NavLink>
+            <NavLink to="/gift-cards">Gift Cards</NavLink>
           </li>
         </ul>
         <div className="navigation-side">
           <div className="for-user">
             <Link
-              to="login"
+              to="/login"
               className="user-btn login"
               onClick={() => setIsOpen(false)}
             >
               Sign in
             </Link>
             <Link
-              to="register"
+              to="/register"
               className="user-btn register"
               onClick={() => setIsOpen(false)}
             >
               Join now
             </Link>
           </div>
-          <Link to="" className="find-store" onClick={() => setIsOpen(false)}>
+          <Link to="/find-store" className="find-store" onClick={() => setIsOpen(false)}>
             <MdLocationOn className="loc-icon" />
             <p>Find a store</p>
           </Link>

@@ -24,26 +24,26 @@ const MainMenu = ({ isOpen, setIsOpen }) => {
             </Link>
             <ul className="nav-list">
               <li>
-                <NavLink to="./menu">Menu</NavLink>
+                <NavLink to="/menu">Menu</NavLink>
               </li>
               <li>
-                <NavLink to="./rewards">Rewards</NavLink>
+                <NavLink to="/rewards">Rewards</NavLink>
               </li>
               <li>
-                <NavLink to="./gift">Gift Cards</NavLink>
+                <NavLink to="/gift-cards">Gift Cards</NavLink>
               </li>
             </ul>
           </div>
           <div className="navigation-side">
-            <NavLink to="/findastore" className="find-store">
+            <NavLink to="/find-store" className="find-store">
               <MdLocationOn className="loc-icon" />
               <p>Find a store</p>
             </NavLink>
             <div className="for-user">
-              <Link to="login" className="user-btn login">
+              <Link to="/login" className="user-btn login">
                 Sign in
               </Link>
-              <Link to="register" className="user-btn register">
+              <Link to="/register" className="user-btn register">
                 Join now
               </Link>
             </div>

@@ -15,6 +15,12 @@
 // Our Coffee
 @import "./pages/OurCoffee/our-coffee";
 
+// Customer Service & components
+@import "./pages/CustomerService/customer-service";
+@import "./pages/CustomerService/customer-search";
+@import "./pages/CustomerService/customer-cards";
+@import "./pages/CustomerService/customer-contact";
+
 /* ------------------------------- Pages End ------------------------------ */
 
 /////
@@ -38,5 +44,8 @@
 
 // Not Found
 @import "./components/NotFound/not-found";
+
+// Loading
+@import "./components/Loading/customer-loading";
 
 /* ---------------------------- Components Start ---------------------------- */
