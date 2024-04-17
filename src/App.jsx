@@ -7,6 +7,7 @@ import OurCompany from "./pages/OurCompany/OurCompany";
 import OurCoffee from "./pages/OurCoffee/OurCoffee";
 import CustomerService from "./pages/CustomerService/CustomerService";
 import People from "./pages/People/People";
+import Planet from "./pages/Planet/Planet";
 
 // Components
 import Header from "./components/Header/Header";
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path="/our-coffee" element={<OurCoffee />} />
           <Route exact path="/customer-service" element={<CustomerService />} />
           <Route exact path="/people" element={<People />} />
+          <Route exact path="/planet" element={<Planet />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </main>
