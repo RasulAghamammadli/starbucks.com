@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 // Pages
 import Home from "./pages/Home/Home";
+import Rewards from "./pages/Rewards/Rewards";
 import FindStore from "./pages/FindStore/FindStore";
 
 import OurCompany from "./pages/OurCompany/OurCompany";
@@ -38,6 +39,7 @@ const App = () => {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/find-store" element={<FindStore />} />
 
           <Route exact path="/about-us" element={<OurCompany />} />

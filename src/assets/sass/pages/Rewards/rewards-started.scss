@@ -1,0 +1,140 @@
+// Rewards Started Start
+.rewards-started {
+  padding: 64px 0;
+  @media (max-width:768px) {
+    padding: 32px 0;
+  }
+  .container {
+    .started-inner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1520px) {
+        padding: 0 40px;
+      }
+      @media (max-width: 1024px) {
+        padding: 0 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+      .header {
+        text-align: center;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .title {
+          color: #000000de;
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 1.385;
+          letter-spacing: 0.8px;
+          @media (max-width: 768px) {
+            font-size: 24px;
+          }
+          @media (max-width: 375px) {
+            font-size: 20px;
+          }
+        }
+        .text {
+          color: #000000de;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          padding-top: 16px !important;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+      .star-cards {
+        display: flex;
+        flex-direction: row;
+        margin: 0 5vw;
+        padding-top: 48px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          margin: 0;
+        }
+        .card {
+          width: 33.33333%;
+          margin: 0 24px;
+          display: flex;
+          flex-direction: column;
+          &:nth-child(1) {
+            margin-left: 0;
+          }
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+            margin: 0;
+            flex-direction: row;
+            padding-bottom: 32px;
+          }
+          .num {
+            margin: 0 auto;
+            max-width: 48px;
+            padding-bottom: 24px;
+            text-align: center;
+            @media (max-width: 768px) {
+              min-width: 64px;
+              margin: 0;
+              padding-bottom: 0;
+              padding-right: 16px;
+            }
+            img {
+              transition: all 0.3s ease-in-out;
+              max-width: 100%;
+              height: auto;
+            }
+          }
+          .card-content {
+            min-width: calc(100% - 128px);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            @media (max-width: 768px) {
+              text-align: left;
+            }
+            .subtitle {
+              color: #000000de;
+              font-size: 19px;
+              font-weight: 600;
+              line-height: 1.5;
+              letter-spacing: 0.4px;
+              padding: 6px 0 4px !important;
+              @media (max-width: 768px) {
+                font-size: 16px;
+                padding: 0 !important;
+                padding-bottom: 4px !important;
+              }
+            }
+            .subtext {
+              color: #000000de;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: 0.3px;
+              line-height: 1.5;
+              padding-top: 16px !important;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+              a {
+                color: #006241;
+                text-decoration: underline !important;
+                &:hover {
+                  text-decoration: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Rewards Started End

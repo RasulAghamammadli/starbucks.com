@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 // Scroll to top component
-import { ScrollToTop } from "./components/ScrollToTop.jsx";
+import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop.jsx";
 
 // Style
 import "./assets/sass/main.scss";
