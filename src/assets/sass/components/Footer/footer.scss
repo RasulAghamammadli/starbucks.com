@@ -114,6 +114,42 @@ footer {
           }
         }
       }
+      .content-foot {
+        display: flex;
+        margin: 20px 10px 4px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        .region {
+          padding-right: 40px;
+          display: flex;
+          flex-direction: column;
+          .title {
+            font-weight: 600;
+            color: $fontColor;
+            text-transform: uppercase;
+          }
+          .lang {
+            display: flex;
+            align-items: center;
+            color: $lightFontColor;
+          }
+          .active-lang {
+            color: #00754a;
+            .active-icon {
+              margin-left: 8px;
+              width: 20px;
+              height: 20px;
+              border-radius: 100%;
+              display: flex;
+              padding: 3px;
+              align-items: center;
+              justify-content: center;
+              background-color: #00754a;
+              color: #fff;
+            }
+          }
+        }
+      }
       .privacy {
         margin: 16px 0 4px !important;
         width: fit-content;
@@ -136,6 +172,49 @@ footer {
             @media (max-width: 768px) {
               font-size: 14px;
             }
+          }
+        }
+      }
+      .privacy-customer {
+        display: flex;
+        align-items: center;
+        margin: 20px 0 4px 0 !important;
+        line-height: 24px;
+        @media (max-width:768px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          &:nth-child(1) {
+            a {
+              padding-left: 0 !important;
+            }
+          }
+          a {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.4px;
+            padding: 8px 16px;
+            color: $fontColor;
+            @media (max-width:768px) {
+              padding: 8px 0;
+            }
+            &:hover {
+              text-decoration: underline !important;
+            }
+          }
+        }
+        span {
+          display: inline;
+          color: #000;
+          border-bottom: 1px solid #000 !important;
+          transform: rotate(90deg);
+          padding: 0 8px;
+          @media (max-width:768px) {
+            display: none;
           }
         }
       }

@@ -1,5 +1,7 @@
 // import React from 'react'
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
 
 // Pages
 import Home from "./pages/Home/Home";
@@ -15,8 +17,6 @@ import Planet from "./pages/Planet/Planet";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/NotFound/NotFound";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const App = () => {
   const location = useLocation();

@@ -4,9 +4,11 @@ import CustomerLoading from "../../components/Loading/CustomerLoading";
 import { Helmet } from "react-helmet";
 
 // Customer components
+import CustomerHeader from "./CustomerHeader";
 import CustomerSearch from "./CustomerSearch";
 import CustomerCards from "./CustomerCards";
 import CustomerContact from "./CustomerContact";
+import CustomerFooter from "./CustomerFooter";
 
 const CustomerService = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,9 +26,11 @@ const CustomerService = () => {
         <CustomerLoading />
       ) : (
         <>
+          <CustomerHeader />
           <CustomerSearch />
           <CustomerCards />
           <CustomerContact />
+          <CustomerFooter />
         </>
       )}
     </>

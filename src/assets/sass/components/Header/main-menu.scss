@@ -112,6 +112,14 @@
         .active {
           box-shadow: inset 0 -6px $hoverFontColor;
         }
+        .customer-find-store {
+          margin-right: 30px;
+          padding-right: 0;
+          .loc-icon {
+            font-size: 26px;
+            margin-right: 8px;
+          }
+        }
         .for-user {
           display: flex;
           align-items: center;
@@ -138,6 +146,99 @@
             &:hover {
               background-color: #000000b3;
               border-color: #000000b3;
+            }
+          }
+        }
+        .language-toggle {
+          position: relative;
+          .dropdown {
+            .dropdown-toggle {
+              padding: 19px 35px 15px 35px;
+              background-color: transparent;
+              color: #000;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                .lang-icon {
+                  color: #00754a;
+                }
+              }
+              &::after {
+                display: none;
+              }
+              .lang-icon {
+                font-size: 20px;
+                transition: all 0.2s ease-in-out;
+              }
+            }
+            .dropdown-menu {
+              background-color: #fff;
+              padding: 15px 20px 20px 20px;
+              max-height: 65vh;
+              border-radius: 10px;
+              width: min-content;
+              transition: 0.2s ease-in-out all;
+              box-shadow: 8px 3px 8px rgba(0, 0, 0, 0.16),
+                3px 3px 8px rgba(0, 0, 0, 0.23);
+              top: -8px !important;
+              left: -200px !important;
+              .head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                line-height: 1.2;
+                color: $lightFontColor;
+                .cancel-btn {
+                  width: 28px;
+                  height: 28px;
+                  padding: 6px;
+                  border-radius: 100%;
+                  transition: all 0.1s ease-in-out;
+                  &:hover {
+                    background-color: #d62b1f;
+                    color: #fff;
+                  }
+                }
+              }
+              .content {
+                display: flex;
+                margin: 15px 10px 4px 10px;
+                font-size: 16px;
+                line-height: 1.5;
+                .region {
+                  padding-right: 40px;
+                  display: flex;
+                  flex-direction: column;
+                  .title {
+                    font-weight: 600;
+                    color: $fontColor;
+                    text-transform: uppercase;
+                  }
+                  .lang {
+                    display: flex;
+                    align-items: center;
+                    color: $lightFontColor;
+                  }
+                  .active-lang {
+                    color: #00754a;
+                    .active-icon {
+                      margin-left: 8px;
+                      width: 20px;
+                      height: 20px;
+                      border-radius: 100%;
+                      display: flex;
+                      padding: 3px;
+                      align-items: center;
+                      justify-content: center;
+                      background-color: #00754a;
+                      color: #fff;
+                    }
+                  }
+                }
+              }
             }
           }
         }

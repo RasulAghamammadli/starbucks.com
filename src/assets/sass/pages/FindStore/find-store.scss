@@ -11,6 +11,10 @@
     padding-top: 99px;
     @media (max-width: 1024px) {
       flex-direction: column-reverse;
+      height: 101vh;
+    }
+    @media (max-width: 768px) {
+      height: 103vh;
     }
     .content-side {
       width: 40%;
@@ -91,7 +95,6 @@
         position: relative;
         overflow: auto;
         display: flex;
-        height: 100%; 
         flex-direction: column;
         justify-content: space-between;
         &::-webkit-scrollbar {
@@ -267,7 +270,13 @@
         width: 100%;
         height: 100%;
         @media (max-width: 1024px) {
-          height: 74%;
+          height: 88%;
+        }
+        @media (max-width: 430px) {
+          height: 81%;
+        }
+        @media (max-width: 400px) {
+          height: 78%;
         }
         iframe {
           width: 100%;
