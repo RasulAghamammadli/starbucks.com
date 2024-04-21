@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import RewardsHero from "./RewardsHero";
 import RewardsStarted from "./RewardsStarted";
 import RewardsExtras from "./RewardsExtras";
+import RewardsCash from "./RewardsCash";
 
 const Rewards = () => {
   return (
@@ -18,6 +19,7 @@ const Rewards = () => {
       <RewardsHero />
       <RewardsStarted />
       <RewardsExtras />
+      <RewardsCash/>
     </>
   );
 };
