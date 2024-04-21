@@ -82,7 +82,7 @@
             }
           }
           .content-head {
-            min-width: 16.66667%;
+            width: 16.66667%;
             @media (max-width: 1024px) {
               width: 100%;
               padding-bottom: 32px;
@@ -115,7 +115,7 @@
           }
           .content-main {
             display: flex;
-            min-width: 67%;
+            width: 67%;
             @media (max-width: 1024px) {
               width: 100%;
             }

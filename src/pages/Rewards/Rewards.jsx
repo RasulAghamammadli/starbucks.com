@@ -6,6 +6,7 @@ import RewardsHero from "./RewardsHero";
 import RewardsStarted from "./RewardsStarted";
 import RewardsExtras from "./RewardsExtras";
 import RewardsCash from "./RewardsCash";
+import RewardsQuestions from "./RewardsQuestions";
 
 const Rewards = () => {
   return (
@@ -19,7 +20,8 @@ const Rewards = () => {
       <RewardsHero />
       <RewardsStarted />
       <RewardsExtras />
-      <RewardsCash/>
+      <RewardsCash />
+      <RewardsQuestions/>
     </>
   );
 };
