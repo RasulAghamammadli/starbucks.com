@@ -5,6 +5,8 @@ import { useEffect } from "react";
 
 // Pages
 import Home from "./pages/Home/Home";
+import Menu from "./pages/Menu/Menu";
+import Drinks from "./pages/Menu/Drinks";
 import Rewards from "./pages/Rewards/Rewards";
 import FindStore from "./pages/FindStore/FindStore";
 
@@ -18,6 +20,9 @@ import Planet from "./pages/Planet/Planet";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./components/NotFound/NotFound";
+
+// Main Context
+import MainContextProvider from "./utils/MainContext";
 
 const App = () => {
   const location = useLocation();
@@ -34,11 +39,13 @@ const App = () => {
   }, [location.pathname]);
 
   return (
-    <>
+    <MainContextProvider>
       {showHeader && <Header />}
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/menu" element={<Menu />} />
+          <Route exact path="/menu/drinks/:id" element={<Drinks />} />
           <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/find-store" element={<FindStore />} />
 
@@ -51,7 +58,7 @@ const App = () => {
         </Routes>
       </main>
       {showFooter && <Footer />}
-    </>
+    </MainContextProvider>
   );
 };
 

@@ -1,0 +1,12 @@
+// Menu Main Start
+.menu-main {
+  padding-left: 136px;
+  display: flex;
+  @media (max-width: 1024px) {
+    padding-left: 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+// Menu Main End

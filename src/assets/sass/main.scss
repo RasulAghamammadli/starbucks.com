@@ -9,7 +9,14 @@
 // Home
 @import "./pages/Home/home";
 
-// Rewards % components
+// Menu & components
+@import "./pages/Menu/menu-nav";
+@import "./pages/Menu/menu-main";
+@import "./pages/Menu/category-sidebar";
+@import "./pages/Menu/base-menu";
+@import "./pages/Menu/drinks-base";
+
+// Rewards & components
 @import "./pages/Rewards/rewards-hero";
 @import "./pages/Rewards/rewards-started";
 @import "./pages/Rewards/rewards-favorites";

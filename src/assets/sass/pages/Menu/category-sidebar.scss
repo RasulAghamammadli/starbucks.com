@@ -1,0 +1,46 @@
+// Category SideBar Start
+.category-side-bar {
+  width: 150px;
+  padding: 16px 0;
+  @media (max-width:1024px) {
+    display: none;
+  }
+  .side-box {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2) {
+    margin-top: 12px;
+    }
+    &:nth-child(3) {
+    margin-top: 12px;
+    }
+    &:nth-child(4) {
+    margin-top: 12px;
+    }
+    .title {
+      color: #000000de;
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+    }
+    .side-list {
+      li {
+        margin: 16px 0;
+        .list-item {
+          color: #00000094;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0.3px;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: #000000de;
+          }
+        }
+      }
+    }
+  }
+}
+// Category SideBar End

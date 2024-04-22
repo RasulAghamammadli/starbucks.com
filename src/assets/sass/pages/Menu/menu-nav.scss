@@ -1,0 +1,56 @@
+// Menu Nav Start
+.menu-nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding-left: 136px;
+  padding-right: 40px;
+  z-index: inherit;
+  border-bottom: 1px solid #dbd9d7 !important;
+  background-color: #f9f9f9;
+  @media (max-width: 1024px) {
+    padding-left: 104px;
+    padding-right: 24px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+  .nav-bar {
+    .list {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      li {
+        .list-item {
+          color: #000000de;
+          display: block;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0.1px;
+          margin-right: 32px;
+          padding: 16px 0;
+          position: relative;
+          @media (max-width: 768px) {
+            letter-spacing: 0.4px;
+          }
+          @media (max-width: 480px) {
+            margin-right: 16px;
+          }
+        }
+        .active {
+          &::before {
+            border-bottom: 1px solid;
+            bottom: 12px;
+            content: "";
+            left: 0;
+            position: absolute;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// Menu Nav End
