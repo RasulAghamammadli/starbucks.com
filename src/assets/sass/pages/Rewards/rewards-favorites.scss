@@ -1,0 +1,144 @@
+// Rewards Favorites Start
+.favorites {
+  padding: 64px 0;
+  @media (max-width: 768px) {
+    padding: 32px 0;
+  }
+  .favorites-inner {
+    padding-top: 48px;
+    background-color: #f1f8f5;
+    text-align: center;
+    .head {
+      padding: 0 16px;
+      .title {
+        color: #000000de;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.385;
+        letter-spacing: 0.8px;
+        padding-bottom: 48px !important;
+        @media (max-width: 768px) {
+          font-size: 24px;
+          padding-bottom: 16px !important;
+        }
+        @media (max-width: 375px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .content {
+      .MuiTabs-root {
+        max-width: 540px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+        .MuiTabs-flexContainer {
+          height: 60px;
+          @media (max-width: 768px) {
+            height: 52px;
+          }
+          .MuiButtonBase-root {
+            width: 20%;
+            height: 60px !important;
+            display: flex;
+            align-items: baseline;
+            flex-direction: row-reverse;
+            font-size: 26px;
+            font-weight: 600;
+            color: #000000de;
+            @media (max-width: 768px) {
+              font-size: 19px;
+            }
+            @media (max-width: 500px) {
+              min-width: 70px;
+            }
+            .MuiTouchRipple-root {
+              opacity: 0;
+            }
+            .MuiSvgIcon-root {
+              font-size: 16px;
+              color: #cba258;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .MuiTabs-indicator {
+          background-color: #00754a;
+          height: 4px;
+        }
+      }
+      .panels {
+        position: relative;
+        background-color: #d4e9e2;
+        min-height: 275px;
+        transition: all 0.3s ease-in-out;
+        @media (max-width: 768px) {
+          min-height: 599px;
+        }
+        @media (max-width: 575px) {
+          min-height: 401px;
+        }
+        .MuiTabPanel-root {
+          box-shadow: inset 0 7px 9px -7px #00000024;
+          padding: 32px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.3s ease;
+          @media (max-width: 768px) {
+            flex-direction: column;
+            padding-bottom: 48px;
+          }
+          .img {
+            max-width: 375px;
+            margin-right: 48px;
+            @media (max-width: 768px) {
+              max-width: 100%;
+              margin-right: 0;
+              padding-bottom: 32px;
+            }
+            img {
+              height: auto;
+              width: 100%;
+            }
+          }
+          .content {
+            max-width: 375px;
+            padding: 0 16px;
+            text-align: left;
+            @media (max-width: 768px) {
+              max-width: 100%;
+              text-align: center;
+            }
+            .title {
+              color: #000000de;
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 1.5;
+              letter-spacing: 0.8px;
+              padding-bottom: 16px !important;
+              @media (max-width: 768px) {
+                font-size: 19px;
+              }
+            }
+            .text {
+              color: #000000de;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.5;
+              letter-spacing: 0.3px;
+              @media (max-width: 768px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Rewards Favorites End

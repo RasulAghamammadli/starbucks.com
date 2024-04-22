@@ -1,0 +1,164 @@
+// Rewards Partners Start
+.partners {
+  margin-bottom: 32px;
+  .outer-bg {
+    background-image: url(src/assets/images/outer-bg.webp);
+    background-size: cover;
+    padding: 32px;
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+    .inner-box {
+      background-color: #d4e9e2;
+      padding: 60px 40px;
+      @media (max-width: 1024px) {
+        padding: 40px 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 60px 16px;
+      }
+      .container {
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+          .star {
+            width: 220px;
+            @media (max-width: 1024px) {
+              width: 500px;
+            }
+            @media (max-width: 768px) {
+              display: none;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .content-inner {
+            max-width: 864px;
+            .header {
+              width: 100%;
+              text-align: center;
+              .title {
+                color: #000000de;
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 1.385;
+                letter-spacing: 0.7px;
+                padding-top: 16px !important;
+                @media (max-width: 768px) {
+                  padding-top: 0 !important;
+                  font-size: 24px;
+                }
+                @media (max-width: 375px) {
+                  font-size: 20px;
+                }
+              }
+              .text {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.4px;
+                padding-top: 16px !important;
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                }
+              }
+            }
+            .boxes {
+              padding: 32px 5px;
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              gap: 30px;
+              @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 0;
+              }
+              .box {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 20px 0;
+                text-align: center;
+                @media (max-width: 768px) {
+                  width: 100%;
+                  flex-direction: row;
+                  margin: 20px 2px;
+                  text-align: left;
+                }
+                .img {
+                  max-width: 190px;
+                  @media (max-width: 768px) {
+                    max-width: 120px;
+                  }
+                  img {
+                    height: auto;
+                    max-width: 100%;
+                  }
+                }
+                .text {
+                  color: #000000de;
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.5;
+                  letter-spacing: 0.3px;
+                  padding-top: 24px !important;
+                  @media (max-width: 768px) {
+                    font-size: 14px;
+                    padding-top: 0 !important;
+                    padding-left: 16px !important;
+                  }
+                  &:nth-last-child(1) {
+                    padding-bottom: 0 !important;
+                  }
+                  a {
+                    text-decoration: underline !important;
+                    color: #006241;
+                    &:hover {
+                      text-decoration: none !important;
+                    }
+                    .icon {
+                      color: #006241;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+            .button-side {
+              text-align: center;
+              .btn {
+                min-width: 35px;
+                min-height: 35px;
+                background-color: $hoverFontColor;
+                border-radius: 50px;
+                border: 1px solid $hoverFontColor !important;
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                line-height: 1.2;
+                padding: 7px 16px;
+                text-align: center;
+                transition: all 0.2s ease-in-out;
+                margin-bottom: 8px;
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                }
+                &:hover {
+                  background-color: #00754ae9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Rewards Partners End

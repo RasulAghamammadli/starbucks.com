@@ -3,9 +3,11 @@ import { Helmet } from "react-helmet";
 
 // Components
 import RewardsHero from "./RewardsHero";
+import RewardsFavorites from "./RewardsFavorites";
 import RewardsStarted from "./RewardsStarted";
 import RewardsExtras from "./RewardsExtras";
 import RewardsCash from "./RewardsCash";
+import RewardsPartners from "./RewardsPartners";
 import RewardsQuestions from "./RewardsQuestions";
 
 const Rewards = () => {
@@ -19,9 +21,11 @@ const Rewards = () => {
       </Helmet>
       <RewardsHero />
       <RewardsStarted />
+      <RewardsFavorites />
       <RewardsExtras />
       <RewardsCash />
-      <RewardsQuestions/>
+      <RewardsPartners />
+      <RewardsQuestions />
     </>
   );
 };
