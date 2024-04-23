@@ -1,0 +1,120 @@
+// Fixed Cart Start
+.fixed-cart {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 99999999;
+  .fixed-inner {
+    padding-right: 18%;
+    padding-left: 400px;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $darkGreen;
+    @media (max-width: 1280px) {
+      padding-right: 9%;
+    }
+    @media (max-width: 1024px) {
+      padding-left: 104px;
+      padding-right: 16px;
+      height: 74px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 16px;
+    }
+    .choose-store {
+      width: auto;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 24px 0;
+      @media (max-width: 1024px) {
+        margin: 16px 0;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .select-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        box-shadow: inset 0 -1.5px 0 #ffffff4d;
+        min-height: 24px;
+        min-width: 240px;
+        padding-bottom: 8px;
+        @media (max-width: 1024px) {
+          padding-bottom: 4px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .text-box {
+          display: flex;
+          flex-direction: column;
+          .title {
+            color: #ffffffb3;
+            line-height: 1.5;
+            letter-spacing: 0.3px;
+            @media (max-width: 1024px) {
+              display: none;
+            }
+          }
+          .text {
+            font-weight: 900;
+            color: #fff;
+            line-height: 1.5;
+            letter-spacing: 0.5px;
+            @media (max-width: 1024px) {
+              display: none;
+            }
+          }
+          .mobile-title {
+            display: none;
+            letter-spacing: 0.5px;
+            @media (max-width: 1024px) {
+              display: block;
+            }
+            @media (max-width: 768px) {
+              font-size: 14px;
+              letter-spacing: 0.4px;
+            }
+          }
+        }
+        .icon {
+          font-size: 18px;
+          margin-left: 8px;
+          color: #fff;
+        }
+      }
+    }
+    .to-cart-btn {
+      position: relative;
+      margin-left: 24px;
+      .bag-icon {
+        font-size: 32px;
+        color: #fff;
+        opacity: 0.7;
+      }
+      .total {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 25px;
+        height: 25px;
+        background-color: #0ead53;
+        color: #fff;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+    }
+  }
+}
+// Fixed Cart End

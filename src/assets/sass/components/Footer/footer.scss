@@ -180,7 +180,7 @@ footer {
         align-items: center;
         margin: 20px 0 4px 0 !important;
         line-height: 24px;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           flex-direction: column;
           align-items: flex-start;
         }
@@ -199,7 +199,7 @@ footer {
             letter-spacing: 0.4px;
             padding: 8px 16px;
             color: $fontColor;
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
               padding: 8px 0;
             }
             &:hover {
@@ -213,7 +213,7 @@ footer {
           border-bottom: 1px solid #000 !important;
           transform: rotate(90deg);
           padding: 0 8px;
-          @media (max-width:768px) {
+          @media (max-width: 768px) {
             display: none;
           }
         }
@@ -232,3 +232,26 @@ footer {
   }
 }
 // Footer End
+
+// New Footer Start
+.new-footer {
+  padding: 48px 0 146px;
+  @media (max-width: 768px) {
+    padding: 32px 0 146px;
+  }
+  .new-container {
+    max-width: 100% !important;
+    .new-footer-in {
+      padding-left: 136px;
+      padding-right: 40px;
+      @media (max-width: 1024px) {
+        padding-left: 104px;
+        padding-right: 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 0 16px;
+      }
+    }
+  }
+}
+// New Footer End

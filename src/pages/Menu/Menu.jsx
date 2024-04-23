@@ -5,6 +5,12 @@ import { Helmet } from "react-helmet";
 import MenuNav from "./MenuNav";
 import MenuMain from "./MenuMain";
 
+// Footer
+import NewFooter from "../../components/Footer/NewFooter";
+
+// Cart Component
+import FixedCart from "../Cart/FixedCart";
+
 const Menu = () => {
   return (
     <>
@@ -13,6 +19,8 @@ const Menu = () => {
       </Helmet>
       <MenuNav />
       <MenuMain />
+      <NewFooter />
+      <FixedCart />
     </>
   );
 };

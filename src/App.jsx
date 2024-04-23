@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
 import Drinks from "./pages/Menu/Drinks";
+import ProductInner from "./pages/ProductInner/ProductInner";
 import Rewards from "./pages/Rewards/Rewards";
 import FindStore from "./pages/FindStore/FindStore";
 
@@ -25,12 +26,15 @@ import NotFound from "./components/NotFound/NotFound";
 import MainContextProvider from "./utils/MainContext";
 
 const App = () => {
+  // Path Location
   const location = useLocation();
+
+  // Components' States
   const [showFooter, setShowFooter] = useState(true);
   const [showHeader, setShowHeader] = useState(true);
 
   // excluded
-  const excludedFooter = ["/find-store", "/customer-service"];
+  const excludedFooter = ["/menu", "/find-store", "/customer-service"];
   const excludedHeader = ["/customer-service"];
 
   useEffect(() => {
@@ -46,6 +50,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/menu/drinks/:id" element={<Drinks />} />
+          <Route exact path="/menu/product/:id" element={<ProductInner />} />
           <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/find-store" element={<FindStore />} />
 

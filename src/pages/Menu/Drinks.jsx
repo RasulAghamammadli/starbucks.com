@@ -8,6 +8,9 @@ import { Helmet } from "react-helmet";
 import MenuNav from "./MenuNav";
 import CategorySideBar from "./CategorySideBar";
 
+// Cart Component
+import FixedCart from "../Cart/FixedCart";
+
 const Drinks = () => {
   const { id } = useParams();
   const [drinks, setDrinks] = useState([]);
@@ -20,8 +23,6 @@ const Drinks = () => {
       })
       .catch((err) => ("Qaqa içkilərdə error var!!!", err));
   }, [id]);
-
-  console.log(drinks);
 
   return (
     <>
@@ -65,6 +66,7 @@ const Drinks = () => {
           </div>
         </div>
       </section>
+      <FixedCart />
     </>
   );
 };

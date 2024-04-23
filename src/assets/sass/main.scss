@@ -16,6 +16,15 @@
 @import "./pages/Menu/base-menu";
 @import "./pages/Menu/drinks-base";
 
+// Product $ components
+@import "./pages/ProductInner/product-nav";
+@import "./pages/ProductInner/product-head";
+@import "./pages/ProductInner/product-options";
+@import "./pages/ProductInner/product-bottom";
+
+// Cart & components
+@import "./pages/Cart/fixed-cart";
+
 // Rewards & components
 @import "./pages/Rewards/rewards-hero";
 @import "./pages/Rewards/rewards-started";

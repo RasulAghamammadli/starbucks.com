@@ -1,0 +1,73 @@
+// Product Head Start
+.product-head {
+  padding: 0 40px 0 135px;
+  background-color: #1f3933;
+  @media (max-width: 1024px) {
+    padding: 0 24px 0 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+  .head-inner {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .img {
+      width: 420px;
+      padding: 16px 0;
+      margin-right: 88px;
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+      }
+      @media (max-width: 768px) {
+        width: 300px;
+      }
+      .img-block {
+        max-width: 300px;
+        margin: 0 auto;
+        img {
+          border-radius: 50%;
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+    .product-name {
+      max-width: 420px;
+      margin-left: 88px;
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        padding-bottom: 32px;
+      }
+      .title {
+        font-size: 36px;
+        line-height: 1.29;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #fff;
+        padding-bottom: 16px !important;
+        @media (max-width: 768px) {
+          font-size: 28px;
+          padding-bottom: 8px !important;
+        }
+        @media (max-width: 768px) {
+          font-size: 22px;
+        }
+      }
+      .text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.4px;
+        color: #ffffffb3;
+        @media (max-width: 768px) {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+// Product Head End

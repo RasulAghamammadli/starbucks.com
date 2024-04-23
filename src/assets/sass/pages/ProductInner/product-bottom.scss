@@ -1,0 +1,77 @@
+// product bottom Start
+.prod-bottom {
+  padding: 32px 40px 32px 135px;
+  margin-top: 64px;
+  background-color: $darkGreen;
+  @media (max-width: 1024px) {
+    padding: 32px 24px 32px 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 32px 16px;
+  }
+  .bottom-inner {
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+    .content {
+      margin-right: 88px;
+      max-width: 420px;
+      @media (max-width: 1024px) {
+        margin: 0;
+      }
+      .gold {
+        border: 1px solid #cba258 !important;
+        width: fit-content;
+        border-radius: 6px;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        padding: 0 8px !important;
+        margin-bottom: 16px !important;
+        display: flex;
+        align-items: center;
+        color: #cba258;
+        .icon {
+          font-size: 10px;
+          margin-right: 4px;
+        }
+      }
+      .text {
+        color: #ffffffb3;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        @media (max-width: 768px) {
+          font-size: 13px;
+        }
+      }
+      .info {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        padding-top: 16px !important;
+        @media (max-width: 768px) {
+          font-size: 13px;
+        }
+      }
+      .btn {
+        margin-top: 24px;
+        color: #fff;
+        border: 1px solid #fff !important;
+        border-radius: 50px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        padding: 6px 16px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+        &:hover {
+          background-color: #0003;
+        }
+      }
+    }
+  }
+}
+// product bottom End
