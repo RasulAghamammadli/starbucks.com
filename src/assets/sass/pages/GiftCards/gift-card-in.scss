@@ -1,2 +1,296 @@
 // Gift Card In Start
+.gift-card-in {
+  padding: 64px 40px;
+  margin: 0 auto;
+  max-width: 580px;
+  @media (max-width: 1024px) {
+    padding: 32px 24px;
+    max-width: 548px;
+  }
+  @media (max-width: 768px) {
+    padding: 32px 16px;
+    max-width: 532px;
+  }
+  .content {
+    width: 100%;
+    .breadcrumbs {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      color: #00000094;
+      letter-spacing: 0.4px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 8px 0;
+      }
+      a {
+        color: #00000094;
+      }
+      span {
+        margin: 0 4px;
+      }
+      p {
+        font-weight: 600;
+      }
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 1.385;
+      letter-spacing: 1px;
+      color: #000000de;
+      margin-bottom: 24px !important;
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+      @media (max-width: 375px) {
+        font-size: 20px;
+      }
+    }
+    .img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 1px #0000001c, 0 0 2px #0000003d;
+      border-radius: 15px;
+      overflow: hidden;
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+    form {
+      .text {
+        color: #000000de;
+        letter-spacing: 0.3px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      .form-main {
+        margin-top: 24px;
+        .head {
+          width: 100%;
+          padding-top: 8px !important;
+          margin-bottom: 16px !important;
+          border-bottom: 4px solid #d4e9e2 !important;
+          span {
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000de;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            padding: 0 8px 10px;
+            @media (max-width: 768px) {
+              font-size: 19px;
+            }
+          }
+        }
+        .form-group {
+          width: 100%;
+          margin: 8px 0 40px;
+          @media (max-width: 768px) {
+            margin-bottom: 32px;
+          }
+          .group-in {
+            padding: 12px 8px;
+            margin: 4px -8px;
+            position: relative;
+            transition: all 0.1s ease-in-out;
+            &:active {
+              background-color: $focusColor;
+            }
+            .field {
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              background-color: #fff;
+              position: relative;
+              label {
+                cursor: pointer;
+                position: absolute;
+                top: -12px;
+                left: 12px;
+                background-color: #fff;
+                font-size: 14px;
+                padding: 0 4px;
+                letter-spacing: 0.4px;
+                color: #00000094;
+                @media (max-width: 768px) {
+                  font-size: 13px;
+                }
+              }
+              .select-icon {
+                position: absolute;
+                right: 1px;
+                padding-right: 8px;
+                font-size: 36px;
+                background-color: #fff;
+                color: #00754a;
+              }
+              select {
+                border: 1px solid #26262694 !important;
+                padding: 11px 16px 11px 12px;
+                border-radius: 8px;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                outline: none;
+                font-size: 19px;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                  padding: 13px 16px 13px 12px;
+                }
+                option {
+                  font-size: 16px;
+                  @media (max-width: 768px) {
+                    font-size: 14px;
+                  }
+                }
+              }
+              input {
+                border: 1px solid #26262694 !important;
+                padding: 9px 16px;
+                border-radius: 8px;
+                font-size: 19px;
+                width: 100%;
+                outline: none;
+                transition: all 0.2s ease-in-out;
+                letter-spacing: 0.4px;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                }
+                &:focus {
+                  border: 1px solid #008e5a !important;
+                }
+                &::placeholder {
+                  color: #000000de;
+                }
+              }
+              textarea {
+                border: 1px solid #26262694 !important;
+                padding: 9px 16px;
+                border-radius: 8px;
+                width: 100%;
+                outline: none;
+                font-size: 19px;
+                max-height: 120px;
+                min-height: 48px;
+                @media (max-width: 768px) {
+                  font-size: 16px;
+                  max-height: 98px;
+                }
+                &:focus {
+                  border: 1px solid #008e5a !important;
+                }
+                &::placeholder {
+                  color: #000000de;
+                }
+              }
+            }
+          }
+        }
+        .add-group {
+          margin: 8px 0 40px;
+          text-align: center;
+          padding-bottom: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media (max-width: 768px) {
+            margin-top: 0;
+            margin-bottom: 32px;
+          }
+          .text {
+            margin-bottom: 16px !important;
+            letter-spacing: 0.4px;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+          .btn {
+            display: block;
+            width: fit-content;
+            min-width: 35px;
+            min-height: 35px;
+            color: #fff;
+            background-color: #000;
+            border-radius: 50px;
+            border: 1px solid #000 !important;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            padding: 7px 16px;
+            line-height: 1.5;
+            transition: all 0.2s ease-in-out;
+            @media (max-width: 768px) {
+              font-size: 14px;
+            }
+            &:hover {
+              background-color: rgba(0, 0, 0, 0.718);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// terms
+.terms {
+  padding-bottom: 91px;
+  background-color: #edebe9;
+  .content {
+    padding: 0 40px;
+    margin: 0 auto;
+    max-width: 800px;
+    @media (max-width: 768px) {
+      padding: 0 16px;
+    }
+    .text {
+      padding: 16px 0 !important;
+      display: flex;
+      align-items: center;
+      color: #00000094;
+      letter-spacing: 0.4px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      .stars-icon {
+        font-size: 24px;
+        margin-right: 8px;
+        color: #cba258;
+        @media (max-width: 400px) {
+          font-size: 36px;
+          margin-right: 4px;
+        }
+      }
+    }
+    .btn {
+      width: fit-content;
+      min-width: 35px;
+      min-height: 35px;
+      color: #000000de;
+      background-color: transparent;
+      border-radius: 50px;
+      border: 1px solid #000 !important;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      padding: 7px 16px;
+      line-height: 1.5;
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+      margin-left: 32px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      &:hover {
+        background-color: #c5c5c594;
+      }
+    }
+  }
+}
+// terms
 // Gift Card In End
