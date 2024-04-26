@@ -14,6 +14,8 @@ import GiftCards from "./pages/GiftCards/GiftCards";
 import GiftCardIn from "./pages/GiftCards/GiftCardIn";
 import FeaturedInner from "./pages/GiftCards/FeaturedInner";
 import FindStore from "./pages/FindStore/FindStore";
+import SignIn from "./pages/SignIn/SignIn";
+import JoinNow from "./pages/JoinNow/JoinNow";
 import OurCompany from "./pages/OurCompany/OurCompany";
 import OurCoffee from "./pages/OurCoffee/OurCoffee";
 import CustomerService from "./pages/CustomerService/CustomerService";
@@ -42,9 +44,11 @@ const App = () => {
     "/cart",
     "/gift",
     "/find-store",
+    "/login",
+    "/register",
     "/customer-service",
   ];
-  const excludedHeader = ["/cart", "/customer-service"];
+  const excludedHeader = ["/cart", "/login", "/register", "/customer-service"];
 
   useEffect(() => {
     setShowFooter(!excludedFooter.includes(location.pathname));
@@ -70,6 +74,8 @@ const App = () => {
             element={<FeaturedInner />}
           />
           <Route exact path="/find-store" element={<FindStore />} />
+          <Route exact path="/login" element={<SignIn />} />
+          <Route exact path="/register" element={<JoinNow />} />
           <Route exact path="/about-us" element={<OurCompany />} />
           <Route exact path="/our-coffee" element={<OurCoffee />} />
           <Route exact path="/customer-service" element={<CustomerService />} />

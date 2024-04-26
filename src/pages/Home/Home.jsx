@@ -10,12 +10,16 @@ import bg3 from "../../assets/images/home3.webp";
 import bg4 from "../../assets/images/home4.webp";
 import bg5 from "../../assets/images/home5.webp";
 
+// components
+import ProgressLinear from "../../components/Loading/ProgressLinear";
+
 const Home = () => {
   return (
     <>
       <Helmet>
         <title>Starbucks Home Coffee Company</title>
       </Helmet>
+      <ProgressLinear />
       <section className="home">
         <div className="container">
           <div className="home-inner">

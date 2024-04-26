@@ -1,0 +1,241 @@
+// login & register start
+.sign {
+  padding: 48px 40px 64px;
+  margin: 0 auto;
+  max-width: 580px;
+  @media (max-width: 1024px) {
+    padding: 48px 24px 64px;
+    max-width: 548px;
+  }
+  @media (max-width: 768px) {
+    padding: 24px 16px;
+    max-width: 532px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.385;
+    color: #000000de;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+    padding-bottom: 48px !important;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      padding-bottom: 0 !important;
+    }
+    @media (max-width: 375px) {
+      font-size: 20px;
+    }
+  }
+  .box {
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    padding: 32px;
+    margin-bottom: 48px;
+    @media (max-width: 768px) {
+      box-shadow: none;
+      width: 100%;
+      padding: 0;
+      padding-top: 20px;
+    }
+    form {
+      .text {
+        color: #000000de;
+        letter-spacing: 0.3px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      .form-group {
+        width: 100%;
+        margin: 16px 0 28px;
+        .group-in {
+          padding: 12px 8px;
+          margin: 4px -8px;
+          position: relative;
+          transition: all 0.1s ease-in-out;
+          &:active {
+            background-color: $focusColor;
+          }
+          .field {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            position: relative;
+            .top-label {
+              cursor: pointer;
+              position: absolute;
+              top: -12px;
+              left: 12px;
+              background-color: #fff;
+              font-size: 14px;
+              padding: 0 4px;
+              letter-spacing: 0.4px;
+              color: #00000094;
+              @media (max-width: 768px) {
+                font-size: 13px;
+              }
+            }
+            .icon {
+              position: absolute;
+              right: 16px;
+              font-size: 22px;
+              color: #26262694;
+            }
+            .input {
+              border: 1px solid #26262694 !important;
+              padding: 9px 16px;
+              border-radius: 8px;
+              font-size: 19px;
+              width: 100%;
+              outline: none;
+              transition: all 0.2s ease-in-out;
+              letter-spacing: 0.4px;
+              @media (max-width: 768px) {
+                font-size: 16px;
+              }
+              &:focus {
+                border: 1px solid #008e5a !important;
+              }
+              &::placeholder {
+                color: #000000de;
+              }
+            }
+          }
+        }
+      }
+      .check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        letter-spacing: 0.5px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-bottom: 32px;
+        }
+        .checkbox {
+          cursor: pointer;
+          appearance: none;
+          display: block;
+          width: 24px;
+          height: 24px;
+          border-radius: 6px;
+          border: 1px solid $hoverFontColor !important;
+          transition: 0.3s;
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 1.5px;
+            left: 7px;
+            width: 8px;
+            height: 16px;
+            border: 1px solid #fff;
+            border-width: 0 3px 3px 0 !important;
+            transform: rotate(40deg);
+          }
+          &:checked {
+            cursor: pointer;
+            appearance: none;
+            background-color: $hoverFontColor;
+            width: 24px;
+            height: 24px;
+            border: none;
+            border-radius: 4px;
+            transform: translateY(-0);
+          }
+        }
+        .check-label {
+          margin-left: 10px;
+        }
+        a {
+          font-weight: 900;
+          color: $hoverFontColor;
+          text-decoration: underline !important;
+        }
+      }
+      .links {
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+        a {
+          margin-bottom: 8px;
+          letter-spacing: 0.4px;
+          font-weight: 900;
+          color: $hoverFontColor;
+          text-decoration: underline !important;
+        }
+      }
+      .button-side {
+        padding: 32px 0 8px;
+        display: flex;
+        justify-content: flex-end;
+        button {
+          outline: none;
+          background-color: $hoverFontColor;
+          border-radius: 500px;
+          box-shadow: 0 0 6px #0000003d, 0 8px 12px #00000024;
+          display: inline-block;
+          font-size: 19px;
+          font-weight: 600;
+          line-height: 1.2;
+          overflow: hidden;
+          color: #fff;
+          letter-spacing: 0.4px;
+          padding: 18px 24px;
+          position: relative;
+          text-align: center;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  .join-side {
+    text-align: center;
+    padding: 32px 56px;
+    @media (max-width: 768px) {
+      padding: 32px 8px;
+    }
+    .subhead {
+      font-weight: 900;
+      color: $hoverFontColor;
+      font-size: 14px;
+      margin-bottom: 8px !important;
+      letter-spacing: 1.5px;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+    }
+    .text {
+      margin-bottom: 16px !important;
+      letter-spacing: 0.4px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        letter-spacing: .2px;
+      }
+    }
+    a {
+      min-width: 35px;
+      min-height: 35px;
+      color: $hoverFontColor;
+      border: 1px solid $hoverFontColor !important;
+      padding: 7px 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      border-radius: 50px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #00754a24;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+// login & register end
