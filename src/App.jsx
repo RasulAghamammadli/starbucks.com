@@ -10,8 +10,10 @@ import Drinks from "./pages/Menu/Drinks";
 import ProductInner from "./pages/ProductInner/ProductInner";
 import Cart from "./pages/Cart/Cart";
 import Rewards from "./pages/Rewards/Rewards";
+import GiftCards from "./pages/GiftCards/GiftCards";
+import GiftCardIn from "./pages/GiftCards/GiftCardIn";
+import FeaturedInner from "./pages/GiftCards/FeaturedInner";
 import FindStore from "./pages/FindStore/FindStore";
-
 import OurCompany from "./pages/OurCompany/OurCompany";
 import OurCoffee from "./pages/OurCoffee/OurCoffee";
 import CustomerService from "./pages/CustomerService/CustomerService";
@@ -35,7 +37,13 @@ const App = () => {
   const [showHeader, setShowHeader] = useState(true);
 
   // excluded
-  const excludedFooter = ["/menu", "/cart", "/find-store", "/customer-service"];
+  const excludedFooter = [
+    "/menu",
+    "/cart",
+    "/gift",
+    "/find-store",
+    "/customer-service",
+  ];
   const excludedHeader = ["/cart", "/customer-service"];
 
   useEffect(() => {
@@ -54,8 +62,14 @@ const App = () => {
           <Route exact path="/menu/product/:id" element={<ProductInner />} />
           <Route exact path="/cart" element={<Cart />} />
           <Route exact path="/rewards" element={<Rewards />} />
+          <Route exact path="/gift" element={<GiftCards />} />
+          <Route exact path="/gift/:category/:id" element={<GiftCardIn />} />
+          <Route
+            exact
+            path="/gift/category/featured"
+            element={<FeaturedInner />}
+          />
           <Route exact path="/find-store" element={<FindStore />} />
-
           <Route exact path="/about-us" element={<OurCompany />} />
           <Route exact path="/our-coffee" element={<OurCoffee />} />
           <Route exact path="/customer-service" element={<CustomerService />} />

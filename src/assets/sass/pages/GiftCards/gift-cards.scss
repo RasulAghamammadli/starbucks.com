@@ -1,0 +1,147 @@
+// Gift Cards Start
+.gift-cards {
+  position: relative;
+  padding: 16px 0 8px;
+  .gift-cards-header {
+    padding: 0 24px 0 135px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      padding-left: 104px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 16px;
+      margin-bottom: 0;
+    }
+    .title {
+      color: #000000de;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+      }
+    }
+    .see-all-btn {
+      min-width: 35px;
+      min-height: 35px;
+      display: inline-block;
+      font-weight: 600;
+      line-height: 1.2;
+      padding: 7px 16px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      color: $hoverFontColor;
+      @media (max-width: 1024px) {
+        padding: 7px 8px;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .gift-cards-slider {
+    padding: 0 64px 0 135px;
+    @media (max-width: 1024px) {
+      padding-left: 104px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 16px;
+    }
+    .swiper {
+      padding: 16px 0;
+      position: relative;
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 24.16667%;
+          transition: opacity 0.2s ease;
+          @media (max-width: 1024px) {
+            width: 33.33333%;
+          }
+          @media (max-width: 480px) {
+            width: 50%;
+          }
+          .slide-item {
+            position: relative;
+            display: block;
+            box-shadow: 0 2px 3px #0000003d;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: translateY(-8px);
+            }
+            img {
+              height: auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 500px;
+        box-shadow: 0 0 6px #0000003d, 0 8px 12px #00000024;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        @media (max-width: 768px) {
+          left: 2px;
+          top: 52%;
+        }
+        &:active {
+          transform: translateY(4px);
+          background-color: rgb(213, 213, 213);
+        }
+        &:after {
+          color: #0009;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 500px;
+        box-shadow: 0 0 6px #0000003d, 0 8px 12px #00000024;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        @media (max-width: 768px) {
+          right: 2px;
+          top: 52%;
+        }
+        &:active {
+          transform: translateY(4px);
+          background-color: rgb(213, 213, 213);
+        }
+        &:after {
+          color: #0009;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .swiper-button-disabled {
+        display: none;
+      }
+    }
+  }
+}
+// Gift Cards End
+
+// featured
+.featured {
+  padding-top: 40px;
+  @media (max-width: 768px) {
+    padding-top: 28px;
+  }
+}

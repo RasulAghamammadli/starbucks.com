@@ -1,0 +1,139 @@
+// Purchase Start
+
+// new gift
+.new-gift {
+  padding: 0 40px 0 135px;
+  @media (max-width: 1024px) {
+    padding: 0 24px 0 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+  .new-inner {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #edebe9;
+    border-radius: 8px;
+    img {
+      width: 58px;
+      height: 55px;
+    }
+    .text {
+      color: #000000de;
+      letter-spacing: 0.2px;
+      padding-left: 16px !important;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+// new gift
+
+// recieved
+.recieved {
+  padding: 8px 0;
+  margin: 16px 0;
+  background-color: #d4e9e2;
+  .recieved-inner {
+    padding: 0 40px 0 135px;
+    @media (max-width: 1024px) {
+      padding: 0 24px 0 104px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 16px;
+    }
+    .up-side {
+      margin: 24px 0 16px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        padding-right: 16px !important;
+        color: #000000de;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        @media (max-width: 768px) {
+          font-size: 19px;
+        }
+      }
+      .box {
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .text {
+          color: #00000094;
+          font-size: 19px;
+          padding-right: 24px !important;
+          @media (max-width: 768px) {
+            font-size: 16px;
+            padding-right: 0 !important;
+            padding-bottom: 8px !important;
+          }
+        }
+        .btn {
+          min-width: 35px;
+          min-height: 35px;
+          color: #000000de;
+          margin: 8px 16px 8px 0;
+          border-radius: 50px;
+          border: 1px solid #000000de !important;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+          padding: 7px 16px;
+          line-height: 1.2;
+          transition: all 0.2s ease-in-out;
+          @media (max-width: 768px) {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+          &:hover {
+            background-color: rgba(41, 41, 41, 0.2);
+          }
+        }
+        .black {
+          background-color: #000;
+          color: #fff;
+          &:hover {
+            background-color: #000000c4;
+          }
+        }
+      }
+    }
+    .bottom-side {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+        font-weight: 600;
+        color: $hoverFontColor;
+        letter-spacing: 0.3px;
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-bottom: 4px;
+          padding-right: 0;
+        }
+        .icon {
+          margin-left: 4px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// recieved
+
+// Purchase End

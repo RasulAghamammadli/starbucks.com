@@ -18,7 +18,7 @@ const CustomerMobileMenu = ({ isOpen, setIsOpen }) => {
             <NavLink to="/rewards">Rewards</NavLink>
           </li>
           <li onClick={() => setIsOpen(false)}>
-            <NavLink to="/gift-cards">Gift Cards</NavLink>
+            <NavLink to="/gift">Gift Cards</NavLink>
           </li>
         </ul>
         <div className="navigation-side customer-mobile">

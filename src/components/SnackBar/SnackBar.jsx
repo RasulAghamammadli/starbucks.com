@@ -13,7 +13,7 @@ const SnackBar = ({ productName }) => {
     <section className="snackbar">
       <Snackbar
         open={openAlert}
-        autoHideDuration={6000}
+        autoHideDuration={3000}
         onClose={handleCloseSnack}
       >
         <Alert

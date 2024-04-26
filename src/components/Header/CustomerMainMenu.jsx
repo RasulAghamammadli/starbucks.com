@@ -35,7 +35,7 @@ const CustomerMainMenu = ({ isOpen, setIsOpen }) => {
                 <NavLink to="/rewards">Rewards</NavLink>
               </li>
               <li>
-                <NavLink to="/gift-cards">Gift Cards</NavLink>
+                <NavLink to="/gift">Gift Cards</NavLink>
               </li>
             </ul>
           </div>

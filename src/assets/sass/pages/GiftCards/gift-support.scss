@@ -1,0 +1,154 @@
+// Gift Support Start
+
+// business
+.gift-business {
+  padding: 56px 40px 56px 135px;
+  background-color: #f9f9f9;
+  @media (max-width: 1024px) {
+    padding: 56px 24px 56px 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 16px 32px 16px;
+  }
+  .business-inner {
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .img {
+      max-width: 375px;
+      margin-right: 40px;
+      @media (max-width: 768px) {
+        margin: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      max-width: 375px;
+      padding: 0 56px 0 16px;
+      margin-right: 32px;
+      @media (max-width: 768px) {
+        padding: 24px 0 0 0;
+      }
+      .title {
+        padding: 0 16px 8px 0 !important;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #000000de;
+        line-height: 1.5;
+      }
+      .text {
+        color: #00000094;
+        letter-spacing: 0.4px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      .btn {
+        width: fit-content;
+        min-width: 35px;
+        min-height: 35px;
+        color: #000000de;
+        margin-top: 16px;
+        border-radius: 50px;
+        border: 1px solid #000000de !important;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        padding: 7px 16px;
+        line-height: 1.5;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        &:hover {
+          background-color: rgba(41, 41, 41, 0.2);
+        }
+        .icon {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// business
+
+// support
+.support {
+  padding: 40px 40px 40px 135px;
+  background-color: #edebe9;
+  @media (max-width: 1024px) {
+    padding: 40px 24px 40px 104px;
+  }
+  @media (max-width: 768px) {
+    padding: 40px 16px;
+  }
+  .support-inner {
+    padding-right: 16px;
+    .title {
+      color: #000000de;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1.5;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px !important;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+    }
+    .text {
+      color: #000000de;
+      max-width: 400px;
+      padding: 8px 0 !important;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .btn {
+        width: fit-content;
+        min-width: 35px;
+        min-height: 35px;
+        color: #000000de;
+        margin-top: 16px;
+        margin-right: 16px;
+        border-radius: 50px;
+        border: 1px solid #000000de !important;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        padding: 7px 16px;
+        line-height: 1.5;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        align-items: center;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        &:hover {
+          background-color: rgba(41, 41, 41, 0.2);
+        }
+        .icon {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// support
+
+// Gift Support End

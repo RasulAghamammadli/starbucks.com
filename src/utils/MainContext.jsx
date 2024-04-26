@@ -14,17 +14,19 @@ const MainContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(
     JSON.parse(localStorage.getItem("cartItems")) || []
   );
+  const [giftItems, setGiftItems] = useState([]);
+
+  // number states
   const [count, setCount] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
 
-  // snackbar
+  // snackbar states
   const [openAlert, setOpenAlert] = useState(false);
   const [sizeAlert, setSizeAlert] = useState(false);
   const [finishAlert, setFinishAlert] = useState(false);
 
-  console.log(cartItems);
-
   // API requests
+  // Category
   useEffect(() => {
     axios
       .get("http://localhost:3000/category")
@@ -32,12 +34,23 @@ const MainContextProvider = ({ children }) => {
       .catch((err) => console.log("Categorydə error var qaqaşım!!!", err));
   }, []);
 
+  // Coffee
   useEffect(() => {
     axios
       .get("http://localhost:3000/coffee")
       .then((res) => setMenuItems(res.data))
       .catch((err) => console.log("Coffeedə error var qaqaşım!!!", err));
   }, []);
+
+  // Gift Cards
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/giftcard")
+      .then((res) => setGiftItems(res.data))
+      .catch((err) => console.log("Gift Cardsda error var qaqaşım!!!", err));
+  }, []);
+
+  // console.log(giftItems, "ozudu");
 
   // Add To Cart LocalStorage
   useEffect(() => {
@@ -57,7 +70,6 @@ const MainContextProvider = ({ children }) => {
     if (reason === "clickaway") {
       return;
     }
-
     setSizeAlert(false);
   };
 
@@ -66,19 +78,17 @@ const MainContextProvider = ({ children }) => {
     if (reason === "clickaway") {
       return;
     }
-
     setFinishAlert(false);
   };
 
   // Add To Cart
   const addToCart = (item) => {
     if (!selectedSize) {
-      // alert("olmadi");
       setSizeAlert(true);
-
       return;
     }
 
+    // Update cart
     const updatedCart = Array.from({ length: count }, (_, index) => ({
       ...item,
       id: `${item.id}-${index + 1}-${selectedSize.id}-${Date.now()}`,
@@ -125,7 +135,7 @@ const MainContextProvider = ({ children }) => {
     }
   };
 
-  // Cart Increment
+  // Cart Page Increment
   const incrementCart = (item) => {
     const updatedCart = {
       ...item,
@@ -147,19 +157,20 @@ const MainContextProvider = ({ children }) => {
         categoryItems,
         menuItems,
         cartItems,
-        handleCloseSnack,
-        openAlert,
+        giftItems,
         count,
         setCount,
         addToCart,
         removeFromCart,
         increaseQuantity,
         decreaseQuantity,
-        localStorageClear,
         incrementCart,
+        localStorageClear,
         setSelectedSize,
+        openAlert,
         sizeAlert,
         setSizeAlert,
+        handleCloseSnack,
         handleCancel,
         finishAlert,
         finishCancel,
