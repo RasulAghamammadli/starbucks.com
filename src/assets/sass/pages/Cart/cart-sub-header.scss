@@ -1,0 +1,161 @@
+// Cart sub header Start
+.cart-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 40vw;
+  box-shadow: 0 1px 1px #0000003d, 0 4px 4px #0000001f;
+  z-index: 1;
+  background-color: $darkGreen;
+  height: 100vh;
+  @media (max-width: 1024px) {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .cart-navigation {
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+    .logo {
+      display: block;
+      margin-right: 24px;
+      width: 56px;
+      height: 55px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .menu-btn {
+      display: block;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      .icon {
+        font-weight: 400;
+        font-size: 18px;
+        margin-right: 4px;
+      }
+    }
+  }
+  .mobile-nav {
+    padding: 16px 16px 16px 8px;
+    display: flex;
+    justify-content: flex-start;
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    a {
+      width: 24px;
+      height: 24px;
+      .icon {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  .cart-head-side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header-info {
+      margin: auto 0;
+      padding: 0 40px 24px 40px;
+      @media (max-width: 1024px) {
+        margin: 0;
+        padding: 0 24px 24px 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 0 16px 24px 16px;
+      }
+      .info-inner {
+        display: flex;
+        flex-direction: column;
+        .review {
+          font-size: 24px;
+          font-weight: 900;
+          letter-spacing: 1.5px;
+          color: #fff;
+          @media (max-width: 768px) {
+            font-size: 19px;
+            letter-spacing: 1px;
+          }
+        }
+        .choose-store {
+          width: auto;
+          min-width: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 8px 0 16px;
+          .select-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            box-shadow: inset 0 -1.5px 0 #ffffff4d;
+            min-height: 24px;
+            min-width: 240px;
+            padding-bottom: 8px;
+            @media (max-width: 1024px) {
+              padding-bottom: 4px;
+            }
+            @media (max-width: 768px) {
+              width: 100%;
+            }
+            .text-box {
+              display: flex;
+              flex-direction: column;
+              .title {
+                color: #ffffffb3;
+                line-height: 1.5;
+                letter-spacing: 0.5px;
+                @media (max-width: 1024px) {
+                  display: none;
+                }
+              }
+              .text {
+                font-weight: 900;
+                color: #fff;
+                line-height: 1.5;
+                letter-spacing: 0.5px;
+                @media (max-width: 1024px) {
+                  display: none;
+                }
+              }
+              .mobile-title {
+                display: none;
+                letter-spacing: 0.5px;
+                @media (max-width: 1024px) {
+                  display: block;
+                }
+                @media (max-width: 768px) {
+                  font-size: 14px;
+                }
+              }
+            }
+            .icon {
+              font-size: 18px;
+              margin-left: 8px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Cart sub header End

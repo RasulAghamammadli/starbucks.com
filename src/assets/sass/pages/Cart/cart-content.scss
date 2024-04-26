@@ -1,0 +1,9 @@
+// Cart Content Start
+.cart-content {
+  margin-left: 40vw;
+  @media (max-width: 1024px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+// Cart Content End

@@ -1,0 +1,94 @@
+// Empty Cart Start
+.empty-in {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  @media (max-width: 1024px) {
+    min-height: calc(100vh - 277px);
+  }
+  .inner-sides {
+    width: 50%;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 1024px) {
+      width: 75%;
+      margin-bottom: 0;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 768px) {
+      width: 83.33333%;
+      align-items: center;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    .img {
+      margin-top: 88px;
+      text-align: left;
+      width: 366px;
+      height: 195px;
+      @media (max-width: 1024px) {
+        margin-top: 40px;
+      }
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+      @media (max-width: 480px) {
+        width: 200px;
+      }
+      img {
+        width: 176px;
+        height: 189px;
+      }
+    }
+    .content {
+      margin: 16px 32px 0 32px;
+      .title {
+        color: #000000de;
+        font-size: 36px;
+        line-height: 1.29;
+        font-weight: 400;
+        letter-spacing: 1px;
+        @media (max-width: 768px) {
+          font-size: 28px;
+        }
+        @media (max-width: 375px) {
+          font-size: 22px;
+        }
+      }
+      .text {
+        margin-top: 16px !important;
+        font-size: 19px;
+        color: #00000094;
+        letter-spacing: 0.5px;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .btn {
+      margin: 24px 0 48px;
+      min-width: 35px;
+      min-height: 35px;
+      color: rgb(18, 131, 63);
+      display: inline-block;
+      border: 1px solid rgb(18, 131, 63) !important;
+      border-radius: 50px;
+      padding: 7px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      text-align: center;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: rgb(18, 131, 63, 0.1);
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+// Empty Cart End

@@ -1,0 +1,88 @@
+// SnackBar Start
+.snackbar {
+  .MuiSnackbar-root {
+    bottom: 94px;
+    width: 100%;
+    left: 0;
+    @media (max-width: 1024px) {
+      bottom: 74px;
+    }
+    .MuiPaper-root {
+      background-color: #006241;
+      border-radius: 0;
+      padding: 20px 40px;
+      align-items: center;
+      @media (max-width: 768px) {
+        padding: 16px;
+      }
+      .MuiAlert-icon {
+        display: none;
+      }
+      .MuiAlert-message {
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+      .MuiAlert-action {
+        .MuiButtonBase-root {
+          &:hover {
+            background-color: rgba(231, 231, 231, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+// SnackBar End
+
+.alert-size {
+  .MuiSnackbar-root {
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    @media (max-width: 1024px) {
+      bottom: 80px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 40px;
+    }
+    .MuiPaper-root {
+      background-color: #006241;
+      padding: 10px;
+      .MuiSnackbarContent-message {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.alert-finish {
+  .MuiSnackbar-root {
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    align-items: baseline;
+    top: 20px;
+    padding-right: 20px;
+    left: 0;
+    z-index: 0;
+    @media (max-width: 1024px) {
+      top: 170px;
+      padding-left: 20px;
+    }
+    .MuiPaper-root {
+      background-color: #006241;
+      padding: 10px;
+      .MuiSnackbarContent-message {
+        padding: 0;
+      }
+    }
+  }
+}

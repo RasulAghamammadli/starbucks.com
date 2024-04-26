@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
 import Drinks from "./pages/Menu/Drinks";
 import ProductInner from "./pages/ProductInner/ProductInner";
+import Cart from "./pages/Cart/Cart";
 import Rewards from "./pages/Rewards/Rewards";
 import FindStore from "./pages/FindStore/FindStore";
 
@@ -34,8 +35,8 @@ const App = () => {
   const [showHeader, setShowHeader] = useState(true);
 
   // excluded
-  const excludedFooter = ["/menu", "/find-store", "/customer-service"];
-  const excludedHeader = ["/customer-service"];
+  const excludedFooter = ["/menu", "/cart", "/find-store", "/customer-service"];
+  const excludedHeader = ["/cart", "/customer-service"];
 
   useEffect(() => {
     setShowFooter(!excludedFooter.includes(location.pathname));
@@ -51,6 +52,7 @@ const App = () => {
           <Route exact path="/menu" element={<Menu />} />
           <Route exact path="/menu/drinks/:id" element={<Drinks />} />
           <Route exact path="/menu/product/:id" element={<ProductInner />} />
+          <Route exact path="/cart" element={<Cart />} />
           <Route exact path="/rewards" element={<Rewards />} />
           <Route exact path="/find-store" element={<FindStore />} />
 

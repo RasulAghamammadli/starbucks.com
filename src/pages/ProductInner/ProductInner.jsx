@@ -7,23 +7,44 @@ import { Link, useParams } from "react-router-dom";
 // Icons
 import { CiLocationOn } from "react-icons/ci";
 import { LuMinusCircle, LuPlusCircle } from "react-icons/lu";
-import { IoStar } from "react-icons/io5";
+import { IoStar, IoChevronDownCircleOutline } from "react-icons/io5";
+import { PiShootingStar } from "react-icons/pi";
+import { IoIosInformationCircleOutline } from "react-icons/io";
 
 // Components
 import FixedCart from "../Cart/FixedCart";
 
+// Context
+import { useMainContext } from "../../utils/MainContext";
+
+// SnackBar Components
+import SnackBar from "../../components/SnackBar/SnackBar";
+
+// Loading
+import ProgressLinear from "../../components/Loading/ProgressLinear";
+import SizeAlert from "../../components/SnackBar/SizeAlert";
+
 const ProductInner = () => {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
-  const [activeItem, setActiveItem] = useState(null); // Aktif öğenin kimliğini saklayan state
-  const [count, setCount] = useState(0);
+
+  // size active
+  const [activeItem, setActiveItem] = useState(null);
+
+  // context
+  const {
+    count,
+    addToCart,
+    increaseQuantity,
+    decreaseQuantity,
+    setSelectedSize,
+  } = useMainContext();
 
   useEffect(() => {
     axios
       .get(`http://localhost:3000/coffee?id=${id}`)
       .then((res) => {
         setProduct(res.data);
-        console.log(res.data);
       })
       .catch((err) => (err, "Məhsulun daxili səhifəsində error var!!!"));
   }, [id]);
@@ -32,12 +53,14 @@ const ProductInner = () => {
     item.sizes.some((size) => size.size === "Grande")
   );
 
+  // activeSize func
   const handleClick = (id) => {
     setActiveItem(id);
   };
 
   return (
     <>
+      <ProgressLinear />
       {product.map((item) => (
         <div key={item.name}>
           <Helmet>
@@ -47,11 +70,13 @@ const ProductInner = () => {
           <nav className="product-breadcrumbs">
             <ul>
               <li>
-                <a href="/menu">Menu</a>
+                <Link to="/menu">Menu</Link>
                 <span>/</span>
               </li>
               <li>
-                <p>{item.subcategory}</p>
+                <Link to={`/menu/drinks/${item.subcategory}`}>
+                  {item.subcategory}
+                </Link>
                 <span>/</span>
               </li>
               <li>
@@ -75,7 +100,8 @@ const ProductInner = () => {
                   {
                     grandeData.sizes.find((size) => size.size === "Grande")
                       .calories
-                  }
+                  }{" "}
+                  <IoIosInformationCircleOutline className="icon" />
                 </p>
               </div>
             </div>
@@ -92,7 +118,7 @@ const ProductInner = () => {
                   </h2>
                   <ul className="size-list">
                     {item.sizes.map((size, sizeIndex) => (
-                      <li key={sizeIndex}>
+                      <li key={sizeIndex} onClick={() => setSelectedSize(size)}>
                         <div
                           className={
                             activeItem === sizeIndex ? "active" : "prod-size"
@@ -124,19 +150,21 @@ const ProductInner = () => {
                   <div className="form-group">
                     <div className="group-in">
                       <div className="field">
-                        <label>Add-ins</label>
                         <select name="" id="">
                           <option value="">Extra Water</option>
                           <option value="">Light Water</option>
                           <option value="">No Water</option>
                         </select>
+                        <label>Add-ins</label>
+                        <IoChevronDownCircleOutline className="select-icon" />
                       </div>
                     </div>
                   </div>
                   <div className="form-group">
                     <div className="group-in">
                       <div className="field">
-                        <label>Espresso & Shot Options</label>
+                        <label>Espresso Options</label>
+                        <IoChevronDownCircleOutline className="select-icon" />
                         <select name="" id="">
                           <option value="">Signature Espresso Roast</option>
                           <option value="">Blonde Espresso Roast</option>
@@ -148,14 +176,20 @@ const ProductInner = () => {
                   </div>
                   <div className="form-group">
                     <div className="group-in">
-                      <div className="field">
-                        <label>Add-ins</label>
+                      <div className="field shot-field">
+                        <label>Espresso & Shot Options</label>
                         <div className="count-box">
                           <span>Shots</span>
                           <div className="box">
-                            <LuMinusCircle className="icon" />
+                            <LuMinusCircle
+                              className="icon"
+                              onClick={() => decreaseQuantity(item.id)}
+                            />
                             <span className="count">{count}</span>
-                            <LuPlusCircle className="icon" />
+                            <LuPlusCircle
+                              className="icon"
+                              onClick={() => increaseQuantity(item.id)}
+                            />
                           </div>
                         </div>
                       </div>
@@ -163,14 +197,16 @@ const ProductInner = () => {
                   </div>
                   <div className="btn-side">
                     <Link className="customize">
-                      <IoStar className="icon" />
+                      <PiShootingStar className="icon" />
                       Customize
                     </Link>
                   </div>
                 </div>
               </div>
               <div className="add-to-cart">
-                <button className="btn">Add to Order</button>
+                <button className="btn" onClick={() => addToCart(item)}>
+                  Add to Order
+                </button>
               </div>
             </div>
           </section>
@@ -202,7 +238,15 @@ const ProductInner = () => {
           </section>
           {/* info */}
 
+          {/* Snackbar */}
+          <SnackBar productName={item.name} />
+          {/* Snackbar */}
+
+          {/* Fixed Cart */}
           <FixedCart />
+          {/* Fixed Cart */}
+
+          <SizeAlert />
         </div>
       ))}
     </>

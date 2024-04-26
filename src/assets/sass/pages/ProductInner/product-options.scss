@@ -120,6 +120,7 @@
           }
         }
         .link {
+          width: fit-content;
           padding-bottom: 32px;
           display: flex;
           align-items: center;
@@ -137,6 +138,7 @@
         }
       }
       .include-options {
+        user-select: none;
         margin-left: 88px;
         width: 420px;
         @media (max-width: 1024px) {
@@ -162,31 +164,49 @@
         }
         .form-group {
           width: 100%;
-          //   padding-bottom: 8px;
           .group-in {
-            padding: 16px 0;
+            padding: 12px 8px;
+            margin: 4px -8px;
             position: relative;
+            transition: all 0.1s ease-in-out;
+            &:active {
+              background-color: $focusColor;
+            }
             .field {
+              cursor: pointer;
               display: flex;
               align-items: center;
               background-color: #fff;
               border-radius: 8px;
               box-shadow: 0 0 0 1px #0006;
-              padding: 12px 16px;
               position: relative;
               transition: border 0.2s linear 0.2s;
               label {
+                cursor: pointer;
                 position: absolute;
                 top: -12px;
-                left: 10px;
+                left: 12px;
                 background-color: #fff;
                 font-size: 14px;
+                padding: 0 4px;
+                letter-spacing: 0.4px;
                 color: #00000094;
                 @media (max-width: 768px) {
                   font-size: 13px;
                 }
               }
+              .select-icon {
+                position: absolute;
+                right: 0;
+                padding-right: 12px;
+                font-size: 40px;
+                background-color: #fff;
+                color: #00754a;
+              }
               select {
+                padding: 12px 16px 12px 12px;
+                border-radius: 8px;
+                cursor: pointer;
                 width: 100%;
                 display: flex;
                 align-items: center;
@@ -226,6 +246,9 @@
                 }
               }
             }
+            .shot-field {
+              padding: 12px 16px;
+            }
           }
         }
         .btn-side {
@@ -254,7 +277,7 @@
             transition: all 0.2s ease-in-out;
             z-index: 1;
             .icon {
-              font-size: 14px;
+              font-size: 22px;
               margin-right: 8px;
               color: #cba258;
             }

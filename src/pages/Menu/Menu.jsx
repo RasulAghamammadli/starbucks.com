@@ -10,6 +10,7 @@ import NewFooter from "../../components/Footer/NewFooter";
 
 // Cart Component
 import FixedCart from "../Cart/FixedCart";
+import ProgressLinear from "../../components/Loading/ProgressLinear";
 
 const Menu = () => {
   return (
@@ -21,6 +22,7 @@ const Menu = () => {
       <MenuMain />
       <NewFooter />
       <FixedCart />
+      <ProgressLinear />
     </>
   );
 };

@@ -1,0 +1,21 @@
+// Progress Start
+.linear-progress {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 0;
+  z-index: 9999;
+  .MuiStack-root {
+    .MuiLinearProgress-root {
+      background-color: transparent;
+      .MuiLinearProgress-bar {
+        background-color: #00754a;
+        animation-duration: 3s;
+        &:nth-last-child(1) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// Progress End

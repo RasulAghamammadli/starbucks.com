@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 // Icons
 import { GoChevronDown } from "react-icons/go";
 import { BsBag } from "react-icons/bs";
+import { useMainContext } from "../../utils/MainContext";
 
 const FixedCart = () => {
+  const { cartItems } = useMainContext();
+
   return (
     <div className="fixed-cart">
       <div className="fixed-inner">
@@ -21,10 +24,14 @@ const FixedCart = () => {
             <GoChevronDown className="icon" />
           </Link>
         </div>
-        <div className="to-cart-btn">
+        <Link to="/cart" className="to-cart-btn">
           <BsBag className="bag-icon" />
-          <span className="total">1</span>
-        </div>
+          {cartItems.length > 0 ? (
+            <span className="total"> {cartItems.length}</span>
+          ) : (
+            ""
+          )}
+        </Link>
       </div>
     </div>
   );

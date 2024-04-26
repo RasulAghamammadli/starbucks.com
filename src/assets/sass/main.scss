@@ -24,6 +24,10 @@
 
 // Cart & components
 @import "./pages/Cart/fixed-cart";
+@import "./pages/Cart/cart-sub-header";
+@import "./pages/Cart/cart-content";
+@import "./pages/Cart/empty-cart";
+@import "./pages/Cart/cart-data";
 
 // Rewards & components
 @import "./pages/Rewards/rewards-hero";
@@ -80,5 +84,9 @@
 
 // Loading
 @import "./components/Loading/customer-loading";
+@import "./components/Loading/progress-linear";
+
+// SnackBar
+@import "./components/SnackBar/snackbar";
 
 /* ---------------------------- Components Start ---------------------------- */
