@@ -39,6 +39,7 @@
 }
 // SnackBar End
 
+// Size Alert Start
 .alert-size {
   .MuiSnackbar-root {
     width: 100%;
@@ -62,7 +63,9 @@
     }
   }
 }
+// Size Alert End
 
+// Finish Alert Start
 .alert-finish {
   .MuiSnackbar-root {
     width: 100%;
@@ -86,3 +89,4 @@
     }
   }
 }
+// Finish Alert End

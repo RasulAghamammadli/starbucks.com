@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 
+// Images
+import drinkSize from "../../assets/images/drink-size.svg";
+
 // Icons
 import { CiLocationOn } from "react-icons/ci";
 import { LuMinusCircle, LuPlusCircle } from "react-icons/lu";
@@ -126,10 +129,7 @@ const ProductInner = () => {
                           onClick={() => handleClick(sizeIndex)}
                         >
                           <div className="circle"></div>
-                          <img
-                            src="https://www.starbucks.com/app-assets/76b8892b0db8f5d411988fe1bbbe4141.svg"
-                            alt=""
-                          />
+                          <img src={drinkSize} alt="" />
                           <div className="info">
                             <p className="text">{size.size}</p>
                             <span className="size">{size.capacity}</span>
@@ -230,7 +230,7 @@ const ProductInner = () => {
                     grandeData.sizes.find((size) => size.size === "Grande")
                       .calories
                   }
-                  ,0g sugar, 0g fat
+                  , 0g sugar, 0g fat
                 </p>
                 <Link className="btn">Full nutrition & ingredients list</Link>
               </div>

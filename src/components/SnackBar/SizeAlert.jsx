@@ -9,7 +9,7 @@ const SizeAlert = () => {
     <div className="alert-size">
       <Snackbar
         open={sizeAlert}
-        autoHideDuration={3000}
+        autoHideDuration={2000}
         onClose={handleCancel}
         message="Please select a size."
       />

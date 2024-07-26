@@ -123,7 +123,7 @@ const GiftCardIn = () => {
           </form>
         </div>
         <div className="checkout-btn">
-          <button className="btn">Checkout</button>
+          <button className="btn">Checkout $25.00</button>
         </div>
       </section>
       <section className="terms">
