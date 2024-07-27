@@ -9,6 +9,7 @@ import RewardsExtras from "./RewardsExtras";
 import RewardsCash from "./RewardsCash";
 import RewardsPartners from "./RewardsPartners";
 import RewardsQuestions from "./RewardsQuestions";
+import ProgressLinear from "../../components/Loading/ProgressLinear";
 
 const Rewards = () => {
   return (
@@ -19,6 +20,7 @@ const Rewards = () => {
           Starbucks Coffee Company
         </title>
       </Helmet>
+      <ProgressLinear />
       <RewardsHero />
       <RewardsStarted />
       <RewardsFavorites />
